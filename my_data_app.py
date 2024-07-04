@@ -46,7 +46,6 @@ if uploaded_file is not None:
     st.write("---")
 
     # Select the output attribute for prediction
-    st.write("## Select the Target Attribute")
     output_attribute = st.selectbox('Select the output attribute for prediction', df.columns)
 
     # Separate features and target variable
@@ -134,7 +133,6 @@ if uploaded_file is not None:
         clusters = kmeans.predict(X_processed)
         st.write("KMeans Clustering Completed. Cluster assignments:")
         st.write(clusters)
-    st.write("----")
 
     # Input boxes for new data
     st.write("## Enter new data for prediction:")
