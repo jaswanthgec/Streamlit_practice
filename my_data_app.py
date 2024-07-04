@@ -44,7 +44,7 @@ if uploaded_file is not None:
     st.write("Column Names and Data Types:")
     st.write(df.dtypes)
     st.write("---")
-
+    st.write("## Enter Target Attribute")
     # Select the output attribute for prediction
     output_attribute = st.selectbox('Select the output attribute for prediction', df.columns)
 
@@ -133,6 +133,7 @@ if uploaded_file is not None:
         clusters = kmeans.predict(X_processed)
         st.write("KMeans Clustering Completed. Cluster assignments:")
         st.write(clusters)
+    st.write("---")
 
     # Input boxes for new data
     st.write("## Enter new data for prediction:")
@@ -192,7 +193,7 @@ if uploaded_file is not None:
     st.write("---")
 
     # Recommend charts based on data types
-    st.write("Recommended Charts:")
+    st.write("## Recommended Charts:")
     for column in df.columns:
         if pd.api.types.is_numeric_dtype(df[column]):
             st.write(f"- Column `{column}` is numeric. Recommended charts: Line Chart, Histogram, Box Plot.")
