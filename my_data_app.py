@@ -210,6 +210,6 @@ st.markdown("""
     ## About the Developer
     - **Name:** Jaswanth Kollipara
     - **GitHub:** [Github](https://github.com/jaswanthgec)
-    - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/jaswanth-kollipara-896443237/)
-    - **Mail:** kjaswanth28@gmail.com
+    - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/jaswanthkollipara/)
+    - **Mail:** kolliparajaswanth030@gmail.com
 """)
